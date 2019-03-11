@@ -49,3 +49,18 @@ Add custom "greeter-wasm" to "greeter-octane".
 > yarn install
 > ember serve
 ```
+
+Another attempt to get WASM working with an Ember app (not Octane).
+
+```
+> ember new greeter-ember
+> cd greeter-ember
+> yarn install
+> ember install ember-auto-import
+> yarn add babel-eslint --save-dev
+> yarn add hello-wasm-pack
+# edit ember-cli-build add Babel plugin "ember-auto-import/babel-plugin"
+> ember g route application
+# edit src/ui/routes/application/controller.js
+> ember serve
+```
